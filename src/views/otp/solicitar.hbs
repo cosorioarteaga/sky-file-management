@@ -1,0 +1,33 @@
+{{#each errors}}
+
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{text}}
+       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+
+{{/each}}
+
+
+
+<div class="col-md-4 mx-auto">
+  <div class="card text-center">
+    <div class="card-header">
+      <h3>Ingresar</h3>
+    </div>
+    <div class="card-body">
+      <form action="/autorizacion/generar" method="POST">
+        <div class="form-group">
+          <input type="text" name="celular" class="form-control" placeholder="Número de celular" autofocus/>
+        </div>
+        
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Generar una solicitud
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

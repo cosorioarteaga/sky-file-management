@@ -1,0 +1,29 @@
+<table class="table table-hover" >
+  <thead >
+    <tr  class="table-primary">
+      <td scope="col" align="center">name</td>
+      <td scope="col" align="center">file_path </td>
+      <td scope="col" align="center">cantidad</td>
+      <td scope="col" align="center">estado</td>
+      <td scope="col" align="center">date</td>
+       <td scope="col" align="center">Carga</td>
+    </tr>
+  </thead>
+  <tbody>
+       {{#each archivo}}
+            <tr class="table-light">
+             <td>{{name}}</td>
+              <td>{{file_path}}</td>
+             <td>{{cantidad}}</td>
+              <td>{{estado}}</td>
+              <td>{{date}}</td>
+                <td align="center" >
+                    <form action="/archivo/registrar/{{_id}}?_method=POST" method="POST">
+                        <input type="hidden" name="_method" value="POST">
+                        <button type="submit" class="btn btn-success btn-block btn-sm">Registrar</button>
+                    </form>
+                </td>
+           </tr>
+         {{/each}}
+  </tbody>
+</table>

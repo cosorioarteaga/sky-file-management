@@ -1,0 +1,34 @@
+<table class="table table-hover" >
+  <thead >
+    <tr  class="table-primary">
+      <td scope="col" align="center">name</td>
+      <td scope="col" align="center">file_path </td>
+      <td scope="col" align="center">cantidad</td>
+      <td scope="col" align="center">estado</td>
+      <td scope="col" align="center">date</td>
+       
+    </tr>
+  </thead>
+  <tbody>
+       {{#each archivo}}
+            <tr class="table-light">
+             <td>{{name}}</td>
+              <td>{{file_path}}</td>
+             <td>{{cantidad}}</td>
+              <td>{{estado}}</td>
+              <td>{{date}}</td>
+               
+           </tr>
+         {{/each}}
+  </tbody>
+</table>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>

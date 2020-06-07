@@ -1,0 +1,24 @@
+<div class="col-md-4 mx-auto">
+  <div class="card text-center">
+    <div class="card-header">
+      <h3>Confirmar autorizacíon</h3>
+    </div>
+    <div class="card-body">
+      <form action="/autorizacion/validarotprequestID" method="POST">
+        <div class="form-group">
+          <input type="text" name="numotp" class="form-control" placeholder="Ingrese código" autofocus/>
+        </div>
+        
+        <div class="form-group">
+          <textarea   name="request_id" class="form-control">{{requestID}}</textarea>
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Procesar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

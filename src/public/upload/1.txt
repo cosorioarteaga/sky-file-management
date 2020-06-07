@@ -1,0 +1,2 @@
+﻿cotizacion,poliza,agencia,documento,certificado,cuota,valor_debita,cuenta,identificacion,nombre_cliente,valor,codigo,debito
+0007403052,0000004247,00001,1,9643,1,68.19,410110197553,1725878795,PICHUCHO MORENO BRYAN SAUL,68.19,0,68.19

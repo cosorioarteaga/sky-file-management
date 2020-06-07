@@ -1,0 +1,27 @@
+<table class="table table-hover" >
+  <thead >
+    <tr  class="table-primary">
+      <td scope="col" align="center"  >Usuario</td>
+      <td scope="col" align="center"  >Email</td>
+      <td scope="col" align="center"  >Editar</td>
+      <td scope="col" align="center"  >Eliminar</td>
+
+    </tr>
+  </thead>
+  <tbody>
+       {{#each usuario}}
+            <tr class="table-light">
+              <td>{{name}}</td>
+                <td>{{email}}</td>
+                <td align="center" ><a href="/users/edit/{{_id}}"><i class="fas fa-edit"></i></a></td>
+
+                <td align="center" >
+                    <form action="/users/eliminar/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-danger btn-block btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+         {{/each}}
+  </tbody>
+</table>

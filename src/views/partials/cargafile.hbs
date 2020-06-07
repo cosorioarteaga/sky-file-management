@@ -1,0 +1,42 @@
+
+<form class="was-validated"  action="/archivo/crear_carga" method="POST"  >
+
+  <div class="form-group">
+    <select class="custom-select" required  id="idempresa" name="idempresa" >
+      <option value="">Seleccione la institución financiera</option>
+
+         {{#each empresa}}
+                 <option value="{{_id}}">{{title}}</option>
+          {{/each}}
+    </select>
+    <div class="invalid-feedback">Seleccione la institución financiera</div>
+  </div>
+
+
+  <div class="form-group">
+    <select class="custom-select" required  id="idservicio" name="idservicio"  >
+      <option value="">Seleccione el servicio</option>
+        {{#each servicio}}
+                 <option value="{{ser_cod}}">{{ser_descripcion}}</option>
+          {{/each}}
+    </select>
+    <div class="invalid-feedback">Seleccione el servicio</div>
+  </div>
+
+  <div class="form-group">
+    <select class="custom-select" required id="idramo" name="idramo" >
+      <option value="">Seleccione el ramo</option>
+       {{#each ramo}}
+                 <option value="{{ram_cod}}">{{ram_descripcion}}</option>
+          {{/each}}
+    </select>
+    <div class="invalid-feedback">Seleccione el ramo</div>
+  </div>
+
+<div class="form-group">
+          <button class="btn btn-primary btn-block" type="submit">
+            Crear
+          </button>
+</div>
+ 
+</form>

@@ -1,0 +1,28 @@
+
+<div class="p-3 mb-2 bg-white text-dark">LISTA DE INSTITUCIONES FINANCIERAS</div>
+<br>
+
+<div class="accordion" id="accordionExample">
+     {{#each empresa}}
+            <div class="card">
+                 
+                        <div class="card-header" id="heading{{identificacion}}">
+                                <h2 class="mb-0">
+                                      <!--<a  href="/">All Notes</a>-->
+                                    <button class="btn btn-link"  type="submit" data-toggle="collapse" data-target="#collapse{{identificacion}}" aria-expanded="true" aria-controls="collapse{{identificacion}}">
+                                        {{title}}
+                                    </button>
+                                </h2>
+                        </div>
+                         
+                            <div id="collapse{{identificacion}}" class="collapse" aria-labelledby="heading{{identificacion}}" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <!--<iframe src="/empresas"></iframe>-->
+                                            {{> empresa_y_usuario }}
+                                        </div>
+                            </div>
+                        
+            </div>
+    {{/each}}
+</div>
+  
