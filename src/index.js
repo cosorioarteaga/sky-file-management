@@ -52,6 +52,9 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
+//app.use(require('connect').bodyParser());
+
 // Configuring Passport
 app.use(passport.initialize());
 app.use(passport.session());
@@ -74,6 +77,7 @@ app.use(require('./routes/empresa'));
 app.use(require('./routes/archivo'));
 app.use(require('./routes/catalogo'));
 app.use(require('./routes/transacciones'));
+app.use(require('./routes/mensajeria'));
 
 
 // static files

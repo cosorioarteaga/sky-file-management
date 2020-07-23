@@ -27,7 +27,8 @@ router.get('/users/login', (req, res) => {
 //CODIGO ORIGINAL
 router.post('/users/login', passport.authenticate('local', {
   
-  successRedirect: '/empresasyusuario',
+  //successRedirect: '/empresasyusuario',
+  successRedirect:'/mensajeria/lista',
   failureRedirect: '/users/login',
   failureFlash: true
 }));
