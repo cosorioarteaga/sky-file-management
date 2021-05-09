@@ -30,7 +30,7 @@
     "file-system": "^2.2.2",
     "formidable": "^1.2.1",
     "fs": "0.0.1-security",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "handlebars-dateformat": "^1.1.1",
     "handlebars-helper-equal": "^1.0.0",
     "handlebars-helpers": "^0.10.0",
